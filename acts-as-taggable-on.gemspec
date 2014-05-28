@@ -22,8 +22,10 @@ Gem::Specification.new do |gem|
     gem.post_install_message = File.read('UPGRADING')
   end
 
-  gem.add_runtime_dependency 'rails', ['>= 3', '< 5']
-
+  gem.add_runtime_dependency 'activerecord',  ['>= 4.0.2', '< 5']
+  gem.add_runtime_dependency 'activesupport', ['>= 4.0.2', '< 5']
+  gem.add_runtime_dependency 'actionpack',    ['>= 4.0.2', '< 5']
+  
   gem.add_development_dependency 'rspec-rails', '2.13.0' # 2.13.1 is broken
   gem.add_development_dependency 'rspec', '~> 2.6'
   gem.add_development_dependency 'ammeter'
